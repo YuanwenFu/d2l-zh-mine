@@ -12,6 +12,13 @@ def func1():
     
     return 
 
+def func2():
+    """
+    QA
+    """
+
+    return 
+
 if __name__ == "__main__":
     print("start...")
     t1 = time.time()
