@@ -2469,7 +2469,7 @@ def load_data_wiki(batch_size, max_len):
 
     Defined in :numref:`subsec_prepare_mlm_data`"""
     num_workers = d2l.get_dataloader_workers()
-    data_dir = d2l.download_extract('wikitext-2', 'wikitext-2')
+    data_dir = os.path.join('..', 'data', 'wikitext-2')
     paragraphs = _read_wiki(data_dir)
     train_set = _WikiTextDataset(paragraphs, max_len)
     train_iter = torch.utils.data.DataLoader(train_set, batch_size,
